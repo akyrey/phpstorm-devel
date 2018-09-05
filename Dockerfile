@@ -49,6 +49,7 @@ RUN a2enmod rewrite
 
 EXPOSE 80
 
+# Change default user
 RUN usermod -u 1000 www-data
 RUN groupmod -g 1000 www-data
 
